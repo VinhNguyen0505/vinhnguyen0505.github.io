@@ -1,34 +1,83 @@
+/* Import Google Font */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
     text-align: center;
 }
 
+/* Header Styling */
 header {
-    background-color: #333;
+    background-color: #222;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
+/* Sections Styling */
+section {
+    margin: 50px auto;
+    width: 85%;
+    max-width: 900px;
     background: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-a {
+/* Project Cards Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Individual Project Card */
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background: #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    color: white;
+}
+
+.project-card p {
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Hover Effect for Cards */
+.project-card:hover {
+    transform: scale(1.05);
+    background: #0056b3;
+}
+
+/* Contact Section */
+#contact a {
     text-decoration: none;
     color: #007BFF;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #0056b3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
 }
